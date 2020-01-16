@@ -1,0 +1,4 @@
+activity_main.xml 에 리싸이클뷰태그 수정
+view class="androidx.appcompat.app.AlertController$RecycleListView"을
+
+androidx.recyclerview.widget.RecyclerView로

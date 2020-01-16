@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gasga"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="224dp">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/border_white"
+            android:text="가입화면"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/border_black"
+            android:gravity="center"
+            android:text="ID"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/border_white"
+            android:gravity="center"
+            android:text="릴23번주세요"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/border_black"
+            android:gravity="center"
+            android:text="나이"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/border_white"
+            android:gravity="center"
+            android:text="15"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/textView17"
+            app:layout_constraintStart_toEndOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="230dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/border_white"
+            android:gravity="center"
+            android:text="중학교/2학년 [자동선택]"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/textView17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="340dp"
+            android:layout_height="29dp"
+            android:background="@drawable/border_black"
+            android:gravity="center"
+            android:text="진영선택/선택진영에 따른 맞춤형 학습진행"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="421dp">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="340dp"
+            android:layout_height="91dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/shadows"
+            android:text="RiL (Reading in Logic) -논리해독자 : 문장-문장 간의 관계에 주목, 텍스트언어학을 기반으로 한 독해법 선호자 추천"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="340dp"
+            android:layout_height="91dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shadows"
+            android:text="ViC(Vocabulary in Context) -어휘문맥론자 : 문맥 속 동사와 전치사 의미에 주목, 어휘지식중심학습 선호자 추천"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="340dp"
+            android:layout_height="91dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/shadows"
+            android:text="GiS(Grammer in Syntax) -문법구문론자 : 문법을 충분히 활용하여, 구문을 터득하는 문법중심 학습 선호자 추천"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24"
+            app:layout_constraintVertical_bias="0.068" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/border_under"
+            android:includeFontPadding="false"
+            android:padding="10dp"
+            android:text="Ai-Eng은 중고등 영어교과내용의 핵심을 App 하나로 압축하여 마스터 할 수 있게 합니다. 카드게임방식으로 스트레스 없이 중고등영어를 끝내보세요!"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="77dp"
+            android:layout_height="28dp"
+            android:background="@drawable/border_greenbtn"
+            android:text="입력완료"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView28" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

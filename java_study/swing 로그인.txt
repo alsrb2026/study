@@ -1,0 +1,9 @@
+btnLogin.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				if(id.getText().equals("park")&&(Arrays.equals(password.getPassword(),"8233".toCharArray()))){
+					System.out.println("로그인 완료");
+					welcomePanel.setVisible(false); // 다른화면으로 전환
+		}
+			}
+		});//깃허브 수정테스트

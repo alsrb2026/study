@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">bottomtest2</string>
+    <string name="title_home">메인</string>
+    <string name="title_dashboard">다이서</string>
+    <string name="title_3">큐브</string>
+    <string name="title_4">소환</string>
+    <string name="title_5">상점</string>
+
+</resources>

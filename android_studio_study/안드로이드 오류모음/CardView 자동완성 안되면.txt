@@ -1,0 +1,7 @@
+androidx.cardview.widget.CardView로 수정
++
+build.gradle에 implementation "com.google.android.material:material:1.0.0" 추가
+
+이전 안드로이드버전이랑 다름
+
+기존은 android.support.v7.widget.CardView임

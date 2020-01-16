@@ -1,0 +1,5 @@
+<view class="androidx.appcompat.app.AlertController$RecycleListView"
+view class="androidx.appcompat.app.AlertController$RecycleListView"
+로 수정
+
+<android.support.v7.widget.RecyclerView 는 과거버전
