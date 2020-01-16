@@ -41,12 +41,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             grade = itemView.findViewById(R.id.grade);
             cardimg = itemView.findViewById(R.id.cardimage);
 
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Toast.makeText(activity, "click " +
                             person.get(getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
-                }
+                } //카드 체력 공격력 등급 안보이게 숨겨놓고(최소화) 클릭하면 어떻게표시? 새로운 액티비티로? 토스트메시지로?
             });
 
             itemView.setOnLongClickListener(new View.OnLongClickListener() {

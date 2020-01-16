@@ -1,6 +1,7 @@
 package org.techtown.ai_eng_v2_00;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,8 +16,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.Random;
 
-import static org.techtown.ai_eng_v2_00.Card.person;
 import static org.techtown.ai_eng_v2_00.MainActivity.cardnumber;
+import static org.techtown.ai_eng_v2_00.MasterCard.person;
+import static org.techtown.ai_eng_v2_00.MasterCard.recyclerViewAdapter;
 import static org.techtown.ai_eng_v2_00.Player.CardImage;
 import static org.techtown.ai_eng_v2_00.Player.Hp;
 import static org.techtown.ai_eng_v2_00.Player.Power;
@@ -57,6 +59,11 @@ public class Drawing extends AppCompatActivity {
                     player.minusMP(70);  //지역변수 player의 MP가 차감되는 것임 -> 전역으로 바꾸기 static으로. 해결 ->static으로 안 바꾸고 안전하게 get set처럼 못하나?
                     mp.setText(String.valueOf(player.getMP() + "/9999 MP"));
                     rnd(random()); //랜덤메소드로  카드등급 나온 후 그 등급에 의해 카드표시+카드목록에 추가
+                    recyclerViewAdapter.notifyDataSetChanged();
+
+                    /*Intent intent = new Intent(getApplication(),MasterCard.class);
+                    startActivity(intent);*/ //액티브 시작이 아닌 데이터 보낸 후 갱신해야함 how? ->
+                    //데이터 추가는 되고있음 -> 추가 후 갱신을 해야함
                 } else {
                     int money = 70 - player.getMP();
                     Toast.makeText(getApplicationContext(), money + "MP가 부족합니다.", Toast.LENGTH_LONG).show();
@@ -70,7 +77,7 @@ public class Drawing extends AppCompatActivity {
                 if (player.getMP() >= 700) {
                     player.minusMP(700);  //지역변수 player의 MP가 차감되는 것임 -> 전역으로 바꾸기 static으로. 해결 ->static으로 안 바꾸고 안전하게 get set처럼 못하나?
                     mp.setText(String.valueOf(player.getMP() + "/9999 MP"));
-                    drawing11();
+                    drawing11(); //메소드 안에 rnd(random()) 있음
                 } else {
                     int money = 700 - player.getMP();
                     Toast.makeText(getApplicationContext(), money + "MP가 부족합니다.", Toast.LENGTH_LONG).show();
@@ -125,45 +132,40 @@ public class Drawing extends AppCompatActivity {
 
 
     public void carddrawing1(){
-        cardimage.setImageResource(R.drawable.card2_1);//card1을 card2 로 변경
+        cardimage.setImageResource(R.drawable.hearth1);//card1을 card2 로 변경
         cardimage.setBackground(getDrawable(R.drawable.goldside));
-        CardImage.add(cardnumber, R.drawable.card2_1);
-        //Hp.add(cardnumber, 10);
-        //Power.add(cardnumber, 5);
-        person.add(new Person("체력 : 10 ", "공격력 : 5","불멸", getDrawable(R.drawable.card2_1)));
+        CardImage.add(cardnumber, R.drawable.hearth1);
+        person.add(new Person("체력 : 10 ", "공격력 : 5","불멸", getDrawable(R.drawable.hearth1)));
     }
 
 
     public void carddrawing2(){
-        cardimage.setImageResource(R.drawable.card2_2);//card1을 card2 로 변경
+        cardimage.setImageResource(R.drawable.hearth2);//card1을 card2 로 변경
         cardimage.setBackground(getDrawable(R.drawable.purple));
-        CardImage.add(cardnumber, R.drawable.card2_2);
-        //Hp.add(cardnumber, 8);
-        //Power.add(cardnumber, 4);
-        person.add(new Person("체력 : 8 ", "공격력 : 4", "전설", getDrawable(R.drawable.card2_2)));
+        CardImage.add(cardnumber, R.drawable.hearth2);
+        person.add(new Person("체력 : 8 ", "공격력 : 4", "전설", getDrawable(R.drawable.hearth2)));
     }
 
     public void carddrawing3(){
-        cardimage.setImageResource(R.drawable.card2_3);//card1을 card2 로 변경
+        cardimage.setImageResource(R.drawable.hearth3);//card1을 card2 로 변경
         cardimage.setBackground(getDrawable(R.drawable.red));
-        CardImage.add(cardnumber, R.drawable.card2_3);
-        person.add(new Person("체력 : 6 ", "공격력 : 3", "영웅", getDrawable(R.drawable.card2_3)));
+        CardImage.add(cardnumber, R.drawable.hearth3);
+        person.add(new Person("체력 : 6 ", "공격력 : 3", "영웅", getDrawable(R.drawable.hearth3)));
     }
 
-
     public void carddrawing4(){
-        cardimage.setImageResource(R.drawable.card2_4);//card1을 card2 로 변경
+        cardimage.setImageResource(R.drawable.hearth4);//card1을 card2 로 변경
         cardimage.setBackground(getDrawable(R.drawable.blue));
-        CardImage.add(cardnumber, R.drawable.card2_4);
-        person.add(new Person("체력 : 4 ", "공격력 : 2", "희귀", getDrawable(R.drawable.card2_4)));
+        CardImage.add(cardnumber, R.drawable.hearth4);
+        person.add(new Person("체력 : 4 ", "공격력 : 2", "희귀", getDrawable(R.drawable.hearth4)));
     }
 
     public void carddrawing5(){
-        cardimage.setImageResource(R.drawable.card2_5);//card1을 card2 로 변경
+        cardimage.setImageResource(R.drawable.hearth5);//card1을 card2 로 변경
         cardimage.setBackground(getDrawable(R.drawable.black));
-        CardImage.add(cardnumber, R.drawable.card2_5);
+        CardImage.add(cardnumber, R.drawable.hearth5);
         //마스터카드(인벤토리)에 사진 넣기 cardnumber에 따라서 순서대로 사진 넣기
-        person.add(new Person("체력 : 2 ", "공격력 : 1", "일반", getDrawable(R.drawable.card2_5)));
+        person.add(new Person("체력 : 2 ", "공격력 : 1", "일반", getDrawable(R.drawable.hearth5)));
     } //카드이미지 누르면 hp atk grade 출력 -> add가 순서대로 저장, 카드 개수 카운트하는 함수로?
 
     public void drawing11() {
