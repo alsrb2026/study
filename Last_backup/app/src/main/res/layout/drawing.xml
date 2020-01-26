@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawingpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view30"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
+
+        <TextView
+            android:id="@+id/mp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_black"
+            android:drawableLeft="@drawable/minidia"
+            android:gravity="right"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/view31"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
+
+        <TextView
+            android:id="@+id/Mileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_black"
+            android:gravity="right"
+            android:paddingStart="5dp"
+            android:paddingRight="5dp"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/view32"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2.0" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="411dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="270dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/view29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/cardimage"
+            android:layout_width="150dp"
+            android:layout_height="230dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/card"
+            android:scaleType="fitXY"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view33"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="0" />
+
+            <Button
+                android:id="@+id/drawingbtn70"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border_black"
+                android:text="1회 뽑기/70MP"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:id="@+id/view34"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0" />
+
+            <Button
+                android:id="@+id/drawingbtn700"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border_black"
+                android:text="10+1회 뽑기/700MP"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:id="@+id/view35"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="0" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view29"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="409dp"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_under"
+            android:includeFontPadding="false"
+            android:padding="10dp"
+            android:text="마스터카드는 연결되는 '2개의 문장'의 예문이 들어있고, 그안에 3가지 독해/문법/어휘의 학습포인트가 들어있습니다. 이 카드의 예문을 여러번 익숙하게 학습하여 테스트에서 정답률을 높이세요. 정답률을 높이면 듀얼대결에서 높은점수와 보상을 획득할 수 있습니다. 자, 그럼 이제 마스터카드(학습카드)를 소환해볼까요?"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_greenbtn"
+            android:text="입력완료"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView28" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
