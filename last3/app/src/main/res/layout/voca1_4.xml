@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackback"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="100dp">
+
+        <TextView
+            android:id="@+id/apple"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/border_white"
+            android:gravity="center"
+            android:text="theory"
+            android:textSize="50dp" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/apple1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이론" />
+
+    <Button
+        android:id="@+id/apple2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="신중하다" />
+
+    <Button
+        android:id="@+id/apple3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="점차로" />
+
+    <Button
+        android:id="@+id/apple4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="보편성" />
+
+    <Button
+        android:id="@+id/apple5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="골동품" />
+
+</LinearLayout>
