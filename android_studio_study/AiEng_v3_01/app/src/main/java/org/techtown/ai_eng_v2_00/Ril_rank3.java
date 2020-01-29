@@ -15,8 +15,11 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import java.util.Random;
 
+import static org.techtown.ai_eng_v2_00.Drawing.player;
 import static org.techtown.ai_eng_v2_00.Player.rankcounter;
 
 public class Ril_rank3 extends Fragment {
@@ -27,6 +30,7 @@ public class Ril_rank3 extends Fragment {
     Button left;
     Button right;
     Ril_rank4 rank4 = new Ril_rank4();
+    public static int ril_r3_cnt = 0;
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) getLayoutInflater().inflate(R.layout.ril_rank3, container, false);
@@ -64,6 +68,17 @@ public class Ril_rank3 extends Fragment {
                 @Override
                 public void onClick(View v) {
                     rankcounter++;
+                    ril_r3_cnt++;
+                    if(ril_r3_cnt == 3)
+                    {
+                        player.plusMP(70);
+                        Snackbar.make(v,"70MP받음 + 강화기능 열림",Snackbar.LENGTH_SHORT).show();
+                    }
+                    if(ril_r3_cnt == 5)
+                    {
+                        Snackbar.make(getActivity().findViewById(android.R.id.content), "초월기능 해제", Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                    }
                     correct();
                 }
             });
@@ -87,6 +102,17 @@ public class Ril_rank3 extends Fragment {
                 @Override
                 public void onClick(View v) {
                     rankcounter++;
+                    ril_r3_cnt++;
+                    if(ril_r3_cnt == 3)
+                    {
+                        player.plusMP(70);
+                        Toast.makeText(getContext(), "70MP 받음 + 강화기능 열림", Toast.LENGTH_LONG).show();
+                    }
+                    if(ril_r3_cnt == 5)
+                    {
+                        Snackbar.make(getActivity().findViewById(android.R.id.content), "초월기능 해제", Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                    }
                     correct();
                 }
             });

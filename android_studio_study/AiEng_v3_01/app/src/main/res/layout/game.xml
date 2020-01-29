@@ -15,7 +15,7 @@
             android:layout_height="10dp"
             android:layout_margin="10dp"
             android:layout_weight="0"
-            android:background="#84FFFF"
+            android:background="#B3ECEC"
             android:orientation="vertical"></LinearLayout>
 
         <TextView
@@ -73,7 +73,7 @@
             android:layout_height="10dp"
             android:layout_margin="10dp"
             android:layout_weight="0"
-            android:background="#84FFFF"
+            android:background="#B3ECEC"
             android:orientation="vertical"></LinearLayout>
 
         <TextView

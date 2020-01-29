@@ -3,22 +3,22 @@
 
     <item
         android:id="@+id/navigation_menu1"
-        android:icon="@android:drawable/ic_menu_call"
+        android:icon="@android:drawable/ic_menu_more"
         android:title="4" />
 
     <item
         android:id="@+id/navigation_menu2"
-        android:icon="@android:drawable/ic_menu_camera"
+        android:icon="@android:drawable/ic_lock_lock"
         android:title="3" />
 
     <item
         android:id="@+id/navigation_menu3"
-        android:icon="@android:drawable/ic_menu_edit"
+        android:icon="@android:drawable/ic_lock_lock"
         android:title="2" />
 
     <item
         android:id="@+id/navigation_menu4"
-        android:icon="@android:drawable/ic_menu_help"
+        android:icon="@android:drawable/ic_lock_lock"
         android:title="1" />
 
 </menu>

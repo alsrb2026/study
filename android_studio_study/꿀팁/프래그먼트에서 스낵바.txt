@@ -1,0 +1,2 @@
+Snackbar.make(getActivity().findViewById(android.R.id.content), "70MP 받음", Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();

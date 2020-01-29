@@ -27,7 +27,7 @@ TextView textView3;
             @Override
             public void onClick(View v) {
                 textView3.setText("한편");
-                _timer = new CountDownTimer(3 * 1000, 1000) {
+                _timer = new CountDownTimer(2 * 1000, 1000) {
                     public void onTick(long millisUntilFinished) {
                     }
 

@@ -17,6 +17,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import java.util.Random;
 
 import static org.techtown.ai_eng_v2_00.Drawing.player;
@@ -31,13 +33,14 @@ public class Ril_rank4 extends Fragment {
     Random rnd2;
     Button left;
     Button right;
+    public static int ril_r4_cnt = 0;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        ViewGroup rootView = (ViewGroup) getLayoutInflater().inflate(R.layout.ril_rank4, container, false);
+        final ViewGroup rootView = (ViewGroup) getLayoutInflater().inflate(R.layout.ril_rank4, container, false);
 
         super.onCreate(savedInstanceState);
-        View view = inflater.inflate(R.layout.ril_rank4,
+        final View view = inflater.inflate(R.layout.ril_rank4,
                 container,
                 false);
 
@@ -67,6 +70,18 @@ public class Ril_rank4 extends Fragment {
                 @Override
                 public void onClick(View v) {
                     rankcounter++;
+                    ril_r4_cnt++;
+                    if(ril_r4_cnt == 3)
+                    {
+                        player.plusMP(70);
+                        Snackbar.make(getActivity().findViewById(android.R.id.content), "70MP 받음 + 강화기능 열림", Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                    }
+                    if(ril_r4_cnt == 5)
+                    {
+                        Snackbar.make(getActivity().findViewById(android.R.id.content), "초월기능 해제", Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                    }
                     correct();
                 }
             });
@@ -90,6 +105,18 @@ public class Ril_rank4 extends Fragment {
                 @Override
                 public void onClick(View v) {
                     rankcounter++;
+                    ril_r4_cnt++;
+                    if(ril_r4_cnt == 3)
+                    {
+                        player.plusMP(70);
+                        Snackbar.make(getActivity().findViewById(android.R.id.content), "70MP 받음 + 강화기능 열림", Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                    }
+                    if(ril_r4_cnt == 5)
+                    {
+                        Snackbar.make(getActivity().findViewById(android.R.id.content), "초월기능 해제", Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                    }
                     correct();
                 }
             });
