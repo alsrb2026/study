@@ -1,0 +1,27 @@
+https://blog.naver.com/PostView.nhn?blogId=tkddlf4209&logNo=221637544307&categoryNo=41&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=search
+
+프레그먼트를 다른 프레그먼트로 교체할 때 백스택에 이전 프레그먼트 정보를 가지고 있다 
+
+아래 메소드를 commit 이전에 실행시켜줌으로써 뒤로가기 버튼을 눌렀을 때 이전 프레그레먼트로 돌아올 수 있게된다
+
+transaction.addToBackStack(null); 
+​
+
+​
+
+사용법)
+
+// Create new fragment and transaction
+Fragment newFragment = new ExampleFragment();
+FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+// Replace whatever is in the fragment_container view with this fragment,
+// and add the transaction to the back stack
+transaction.replace(R.id.fragment_container, newFragment);
+transaction.addToBackStack(null); 
+
+// Commit the transaction
+transaction.commit();
+
+​
+[출처] [Android] 이전 Fragment로 돌아가기|작성자 Printf
