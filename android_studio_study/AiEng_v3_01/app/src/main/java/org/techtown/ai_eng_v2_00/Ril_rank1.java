@@ -63,12 +63,12 @@ public class Ril_rank1 extends Fragment {
                 @Override
                 public void onClick(View v) {
                     rankcounter++;
-                    if(ril_r1_cnt == 3)
+                    if(ril_r1_cnt == 3) //만약 포인트1의 랭크4를 3번학습하면 보상
                     {
                         player.plusMP(70);
                         Toast.makeText(getContext(), "70MP 받음 + 강화기능 열림", Toast.LENGTH_LONG).show();
                     }
-                    if(ril_r1_cnt == 5)
+                    if(ril_r1_cnt == 5) //만약 포인트1의 랭크4를 3번학습하면 보상
                     {
                         Snackbar.make(getActivity().findViewById(android.R.id.content), "초월기능 해제", Snackbar.LENGTH_LONG)
                                 .setAction("Action", null).show();
