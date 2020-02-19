@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#49A5C9"
+            android:gravity="center"
+            android:text="Ril - 독해"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <View
+                android:id="@+id/views0"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/point1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/gra"
+                android:text="Point 1"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:id="@+id/views1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/voca2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="0"
+                android:background="@drawable/gra"
+                android:text="Point 2"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:id="@+id/views2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/voca3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="0"
+                android:background="@drawable/gra"
+                android:text="Point 3"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:id="@+id/views3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <View
+                android:id="@+id/views4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/voca4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/gra"
+                android:text="Point 4"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:id="@+id/views5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/voca5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="0"
+                android:background="@drawable/gra"
+                android:text="Point 5"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:id="@+id/views6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/voca6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="0"
+                android:background="@drawable/gra"
+                android:text="Point 6"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:id="@+id/views7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <View
+                android:id="@+id/views8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/voca7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/gra"
+                android:text="Point 7"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:id="@+id/views9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/voca8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="0"
+                android:background="@drawable/gra"
+                android:text="Point 8"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:id="@+id/views10"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/voca9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="0"
+                android:background="@drawable/gra"
+                android:text="Point 9"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:id="@+id/views11"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
